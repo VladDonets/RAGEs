@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "samserver": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Games\\RAGE\\RAGEMP\\server-files\\ragemp-server.exe",
+      "workingDirectory": "D:\\Games\\RAGE\\RAGEMP\\server-files"
+    }
+  }
+}

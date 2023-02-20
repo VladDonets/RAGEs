@@ -1,0 +1,4 @@
+﻿<meta>
+  <info name="samserver" description="script" />
+  <script src="bin/Debug\netcoreapp3.1/samserver.dll" />
+</meta>

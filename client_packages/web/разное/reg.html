@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .form-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .form-input {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .form-switch {
+        margin-top: 20px;
+        font-size: 14px;
+        color: blue;
+        cursor: pointer;
+      }
+
+      .form-submit {
+        width: 300px;
+        height: 40px;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      .form-error {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-title">GTA Server</div>
+      <form id="registration-form">
+        <input
+          type="text"
+          id="nickname"
+          class="form-input"
+          placeholder="Nickname"
+        />
+        <input
+          type="text"
+          id="email"
+          class="form-input"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          id="password"
+          class="form-input"
+          placeholder="Password"
+        />
+        <div id="password-error" class="form-error"></div>
+        <input
+          type="submit"
+          value="Register"
+          class="form-submit"
+        />
+        <div class="form-switch">Already have an account? Login</div>
+      </form>
+
+      <form id="login-form" style="display: none;">
+        <input
+          type="text"
+          id="login-email"
+          class="form-input"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          id="login-password"
+          class="form-input"
+          placeholder="Password"
+        />
+        <input
+          type="submit"
+          value="Login"
+          class="form-submit"
+        />
+        <div class="form-switch">Don't have an account? Register</div>
+      </form>
+    </div>
+
+    <script>
+      const registrationForm = document.getElementById("registration-form");

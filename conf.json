@@ -1,0 +1,16 @@
+{
+	"maxplayers": 10,
+	"anounce" :  true,
+	"name" : "SamServer", 
+	"gamemode" : "Role Play", 
+	"stream-distance" : 300.0,
+	"announce" : true,
+	"csharp" : "enabled",
+	"port": 22005,
+	"limit-time-of-connections-per-ip": 240,
+	"language" : "ru" ,
+	"voice-chat": true,
+	"server-side-weapons-only-mode": true,
+	"resource-compression-level": 1,
+	"http-threads": 100
+}
